@@ -41,7 +41,7 @@ class Login extends CI_Controller
                     ];
                     $this->session->set_userdata($data);
                     if ($row['id_level'] == 1) {
-                        redirect('Departemen');
+                        redirect('Admin');
                     } elseif ($row['id_level'] == 2) {
                         redirect('user');
                     } else {
